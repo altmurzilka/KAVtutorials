@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F16440EE24882A1C00E78A8F /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16440ED24882A1C00E78A8F /* Home.swift */; };
+		F17E4A1724967B13009C6880 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17E4A1624967B13009C6880 /* CardView.swift */; };
 		F1925551248693C60025F27F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1925550248693C60025F27F /* AppDelegate.swift */; };
 		F1925553248693C60025F27F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1925552248693C60025F27F /* SceneDelegate.swift */; };
 		F1925555248693C60025F27F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1925554248693C60025F27F /* ContentView.swift */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		F16440ED24882A1C00E78A8F /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		F17E4A1624967B13009C6880 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		F192554D248693C60025F27F /* HeroAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeroAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1925550248693C60025F27F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1925552248693C60025F27F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				F1925552248693C60025F27F /* SceneDelegate.swift */,
 				F1925554248693C60025F27F /* ContentView.swift */,
 				F16440ED24882A1C00E78A8F /* Home.swift */,
+				F17E4A1624967B13009C6880 /* CardView.swift */,
 				F1925556248693CA0025F27F /* Assets.xcassets */,
 				F192555B248693CA0025F27F /* LaunchScreen.storyboard */,
 				F192555E248693CA0025F27F /* Info.plist */,
@@ -153,6 +156,7 @@
 				F1925553248693C60025F27F /* SceneDelegate.swift in Sources */,
 				F16440EE24882A1C00E78A8F /* Home.swift in Sources */,
 				F1925555248693C60025F27F /* ContentView.swift in Sources */,
+				F17E4A1724967B13009C6880 /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

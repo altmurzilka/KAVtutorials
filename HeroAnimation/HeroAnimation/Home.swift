@@ -48,18 +48,25 @@ struct Home: View {
                         
                         ForEach(0..<self.data.count) { i in
                             GeometryReader{g in
-                                Image(self.data[i].image)
-                                    .resizable()
-                                    .cornerRadius(self.data[i].expand ? 0 : 25)
-                                    .padding(.horizontal, self.data[i].expand ? 0 : 15)
+                                CardView(data: self.$data[i], hero: self.$hero)
                                     .offset(y: self.data[i].expand ? -g.frame(in: .global).minY : 0)
                                     .opacity(self.hero ? (self.data[i].expand ? 1 : 0) : 1)
                                     .onTapGesture {
-                                        self.hero.toggle()
-                                        self.data[i].expand.toggle()
+                                        withAnimation(.interactiveSpring(response: 0.5, dampingFraction: 0.8, blendDuration: 0)){
+                                            
+                                            if !self.data[i].expand {
+                                                
+                                                self.hero.toggle()
+                                                self.data[i].expand.toggle()
+                                            }
+                                        }
                                 }
                             }
                             .frame(height: self.data[i].expand ? UIScreen.main.bounds.height : 250)
+                            .simultaneousGesture(DragGesture(minimumDistance: self.data[i].expand ? 0 : 500).onChanged({ (_) in
+                                
+                                print("dragging")
+                            }))
                         }
                     }
                 }
