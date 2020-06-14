@@ -21,26 +21,48 @@ struct Home: View {
         Card(id: 5, image: "p1", title: "London", details: "London, the capital of England and the United Kingdom, is a 21st-century city with history stretching back to Roman times. At its centre stand the imposing Houses of Parliament, the iconic ‘Big Ben’ clock tower and Westminster Abbey, site of British monarch coronations. Across the Thames River, the London Eye observation wheel provides panoramic views of the South Bank cultural complex, and the entire city.", expand: false)
     ]
     
+    @State var hero = false
+    
     var body: some View {
         VStack {
             ScrollView(.vertical, showsIndicators: false) {
                 
                 VStack {
+                    HStack {
+                        VStack(alignment: .leading, spacing: 12) {
+                            Text("Sunday, June 2020")
+                            Text("Today")
+                                .font(.title)
+                                .fontWeight(.bold)
+                        }
+                        Spacer()
+                        
+                        Image("pic")
+                            .resizable()
+                            .frame(width: 50, height: 50)
+                            .clipShape(Capsule())
+                    }
+                    .padding()
                     
-                    VStack {
-                        VStack(spacing: 15) {
-                            ForEach(self.data) { i in
-                                Image(i.image)
+                    VStack(spacing: 15) {
+                        
+                        ForEach(0..<self.data.count) { i in
+                            GeometryReader{g in
+                                Image(self.data[i].image)
                                     .resizable()
-                                    .frame(height: 250)
-                                    .cornerRadius(25)
-                                    .padding(.horizontal)
+                                    .cornerRadius(self.data[i].expand ? 0 : 25)
+                                    .padding(.horizontal, self.data[i].expand ? 0 : 15)
+                                    .offset(y: self.data[i].expand ? -g.frame(in: .global).minY : 0)
+                                    .opacity(self.hero ? (self.data[i].expand ? 1 : 0) : 1)
+                                    .onTapGesture {
+                                        self.hero.toggle()
+                                        self.data[i].expand.toggle()
+                                }
                             }
+                            .frame(height: self.data[i].expand ? UIScreen.main.bounds.height : 250)
                         }
                     }
-                    
                 }
-                
             }
         }
     }
