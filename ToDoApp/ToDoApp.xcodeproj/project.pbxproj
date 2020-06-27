@@ -14,6 +14,10 @@
 		F1010F1324A786960034EBB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1010F1224A786960034EBB9 /* Assets.xcassets */; };
 		F1010F1624A786960034EBB9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1010F1524A786960034EBB9 /* Preview Assets.xcassets */; };
 		F1010F1924A786960034EBB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1010F1724A786960034EBB9 /* LaunchScreen.storyboard */; };
+		F1010F2124A7D1C30034EBB9 /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1010F2024A7D1C30034EBB9 /* Type.swift */; };
+		F1010F2324A7D1EF0034EBB9 /* SaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1010F2224A7D1EF0034EBB9 /* SaveView.swift */; };
+		F1010F2524A7D2380034EBB9 /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1010F2424A7D2380034EBB9 /* CellView.swift */; };
+		F1010F2724A7D2A80034EBB9 /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1010F2624A7D2A80034EBB9 /* Observer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		F1010F1524A786960034EBB9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F1010F1824A786960034EBB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F1010F1A24A786960034EBB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1010F2024A7D1C30034EBB9 /* Type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Type.swift; sourceTree = "<group>"; };
+		F1010F2224A7D1EF0034EBB9 /* SaveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveView.swift; sourceTree = "<group>"; };
+		F1010F2424A7D2380034EBB9 /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
+		F1010F2624A7D2A80034EBB9 /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +69,10 @@
 				F1010F0924A786940034EBB9 /* AppDelegate.swift */,
 				F1010F0B24A786940034EBB9 /* SceneDelegate.swift */,
 				F1010F1024A786940034EBB9 /* ContentView.swift */,
+				F1010F2624A7D2A80034EBB9 /* Observer.swift */,
+				F1010F2424A7D2380034EBB9 /* CellView.swift */,
+				F1010F2224A7D1EF0034EBB9 /* SaveView.swift */,
+				F1010F2024A7D1C30034EBB9 /* Type.swift */,
 				F1010F1224A786960034EBB9 /* Assets.xcassets */,
 				F1010F1724A786960034EBB9 /* LaunchScreen.storyboard */,
 				F1010F1A24A786960034EBB9 /* Info.plist */,
@@ -149,10 +161,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1010F2124A7D1C30034EBB9 /* Type.swift in Sources */,
+				F1010F2724A7D2A80034EBB9 /* Observer.swift in Sources */,
 				F1010F0A24A786940034EBB9 /* AppDelegate.swift in Sources */,
 				F1010F0F24A786940034EBB9 /* ToDoApp.xcdatamodeld in Sources */,
 				F1010F1124A786940034EBB9 /* ContentView.swift in Sources */,
 				F1010F0C24A786940034EBB9 /* SceneDelegate.swift in Sources */,
+				F1010F2324A7D1EF0034EBB9 /* SaveView.swift in Sources */,
+				F1010F2524A7D2380034EBB9 /* CellView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
