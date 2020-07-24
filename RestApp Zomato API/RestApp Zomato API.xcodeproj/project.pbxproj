@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F12C56F924CB62DE00687579 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = F12C56F824CB62DE00687579 /* SDWebImageSwiftUI */; };
 		F184233224C9E75100809535 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F184233124C9E75100809535 /* AppDelegate.swift */; };
 		F184233424C9E75100809535 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F184233324C9E75100809535 /* SceneDelegate.swift */; };
 		F184233624C9E75100809535 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F184233524C9E75100809535 /* ContentView.swift */; };
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F12C56F924CB62DE00687579 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +93,9 @@
 			dependencies = (
 			);
 			name = "RestApp Zomato API";
+			packageProductDependencies = (
+				F12C56F824CB62DE00687579 /* SDWebImageSwiftUI */,
+			);
 			productName = "RestApp Zomato API";
 			productReference = F184232E24C9E75100809535 /* RestApp Zomato API.app */;
 			productType = "com.apple.product-type.application";
@@ -118,6 +123,9 @@
 				Base,
 			);
 			mainGroup = F184232524C9E75100809535;
+			packageReferences = (
+				F12C56F724CB62DE00687579 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = F184232F24C9E75100809535 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -345,6 +353,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F12C56F724CB62DE00687579 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F12C56F824CB62DE00687579 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F12C56F724CB62DE00687579 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F184232624C9E75100809535 /* Project object */;
 }
