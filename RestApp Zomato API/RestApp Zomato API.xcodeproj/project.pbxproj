@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F129756B24CB83B8005EE901 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = F129756A24CB83B8005EE901 /* Data.swift */; };
+		F129756D24CB860D005EE901 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F129756C24CB860D005EE901 /* Card.swift */; };
 		F12C56F924CB62DE00687579 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = F12C56F824CB62DE00687579 /* SDWebImageSwiftUI */; };
 		F184233224C9E75100809535 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F184233124C9E75100809535 /* AppDelegate.swift */; };
 		F184233424C9E75100809535 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F184233324C9E75100809535 /* SceneDelegate.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F129756A24CB83B8005EE901 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		F129756C24CB860D005EE901 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		F184232E24C9E75100809535 /* RestApp Zomato API.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RestApp Zomato API.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F184233124C9E75100809535 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F184233324C9E75100809535 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +65,8 @@
 				F184233124C9E75100809535 /* AppDelegate.swift */,
 				F184233324C9E75100809535 /* SceneDelegate.swift */,
 				F184233524C9E75100809535 /* ContentView.swift */,
+				F129756C24CB860D005EE901 /* Card.swift */,
+				F129756A24CB83B8005EE901 /* Data.swift */,
 				F184233724C9E75300809535 /* Assets.xcassets */,
 				F184233C24C9E75300809535 /* LaunchScreen.storyboard */,
 				F184233F24C9E75300809535 /* Info.plist */,
@@ -155,7 +161,9 @@
 			files = (
 				F184233224C9E75100809535 /* AppDelegate.swift in Sources */,
 				F184233424C9E75100809535 /* SceneDelegate.swift in Sources */,
+				F129756D24CB860D005EE901 /* Card.swift in Sources */,
 				F184233624C9E75100809535 /* ContentView.swift in Sources */,
+				F129756B24CB83B8005EE901 /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,9 +13,13 @@ struct ContentView: View {
     @ObservedObject var obs = observer()
     
     var body: some View {
-        List(obs.datas) {i in
-            Text(i.name)
-            
+        
+        NavigationView {
+            List(obs.datas) {i in
+                Card(image: i.image, name: i.name, weburl: i.webUrl, rating: i.rating)
+                
+            }
+            .navigationBarTitle("Near By Restaurants")
         }
     }
 }
@@ -58,32 +62,4 @@ class observer : ObservableObject {
             }
         }.resume()
     }
-}
-
-struct datatype: Identifiable {
-    var id : String
-    var name : String
-    var image: String
-    var rating: String
-    var webUrl: String
-}
-
-struct Type: Decodable {
-    var nearby_restaurants : [Type1]
-}
-
-struct Type1: Decodable {
-    var restaurant : Type2
-}
-
-struct Type2 : Decodable {
-    var id: String
-    var name: String
-    var url: String
-    var thumb: String
-    var user_rating : Type3
-}
-
-struct Type3 : Decodable {
-    var aggregate_rating : String
 }
